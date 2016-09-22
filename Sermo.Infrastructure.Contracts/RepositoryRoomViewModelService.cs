@@ -24,6 +24,7 @@ namespace Sermo.UI.Controllers
             this.mapper = mapper;
         }
 
+        //Changes Sprint 1 -- I want to view a list of rooms that represent conversations -- Tracy Yang
         public IEnumerable<RoomViewModel> GetAllRooms()
         {
             var allRooms = new List<RoomViewModel>();
@@ -33,7 +34,7 @@ namespace Sermo.UI.Controllers
                 allRooms.Add(mapper.MapRoomRecordToRoomViewModel(roomRecord));
             }
             return allRooms;
-            //Changes Sprint 1 -- I want to view a list of rooms that represent conversations -- Tracy Yang
+            
         }
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
@@ -48,11 +49,12 @@ namespace Sermo.UI.Controllers
             return roomMessages;
         }
 
+        //Changes Sprint 1 -- I want to view a list of rooms that represent conversations -- Tracy Yang
         public void CreateRoom(RoomViewModel roomViewModel)
         {
             var roomRecord = mapper.MapRoomViewModelToRoomRecord(roomViewModel);
             roomRepository.CreateRoom(roomRecord.Name);
-            //Changes Sprint 1 -- I want to view a list of rooms that represent conversations -- Tracy Yang
+            
         }
 
         public void AddMessage(MessageViewModel messageViewModel)
