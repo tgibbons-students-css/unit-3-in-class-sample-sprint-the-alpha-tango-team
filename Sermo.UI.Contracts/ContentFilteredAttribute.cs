@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sermo.UI.Contracts
 {
+    // Changes Sprint 1 --  “I want to filter message content so that it is appropriate.” -- Heather Carlson
     public class ContentFilteredAttribute : ValidationAttribute
     {
         private readonly string[] blacklist = new string[] 
