@@ -37,6 +37,7 @@ namespace Sermo.UI.Controllers
 
         public IEnumerable<MessageViewModel> GetRoomMessages(int roomID)
         {
+            // nkaplan47 made changes to this method
             var roomMessages = new List<MessageViewModel>();
             var roomMessageRecords = messageRepository.GetMessagesForRoomID(roomID);
             foreach(var messageRecord in roomMessageRecords)
