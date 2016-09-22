@@ -20,6 +20,7 @@ namespace Sermo.UnitTests
     public class RoomControllerTests
     {
         [Test]
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
         public void ConstructingWithoutReaderThrowsArgumentNullException()
         {
             Assert.Throws<ArgumentNullException>(() => new RoomController(null, mockWriter.Object));
@@ -38,6 +39,7 @@ namespace Sermo.UnitTests
         }
 
         [Test]
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
         public void GetCreateRendersView()
         {
             var controller = CreateController();
@@ -61,6 +63,7 @@ namespace Sermo.UnitTests
         [TestCase(null)]
         [TestCase("")]
         [TestCase("    ")]
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
         public void PostCreateNewRoomWithInvalidRoomNameCausesValidationError(string roomName)
         {
             var controller = CreateController();
