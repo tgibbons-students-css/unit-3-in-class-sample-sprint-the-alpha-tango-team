@@ -66,6 +66,7 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
+        // Changes Sprint 1 -- I want to send plain text messages to other room members. -- Mike Rauzi
         public ActionResult AddMessage(MessageViewModel messageViewModel)
         {
             ActionResult result;
