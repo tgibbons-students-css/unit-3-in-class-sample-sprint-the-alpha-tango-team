@@ -10,7 +10,7 @@ using System.Diagnostics.Contracts;
 using Sermo.Data.Contracts;
 
 namespace Sermo.Data.AdoNet
-{
+{ // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
     public class AdoNetRoomRepository : IRoomRepository
     {
         public AdoNetRoomRepository(IApplicationSettings applicationSettings, DbProviderFactory databaseFactory)
