@@ -37,6 +37,7 @@ namespace Sermo.UI.Controllers
         }
 
         [HttpPost]
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
         public ActionResult Create(RoomViewModel model)
         {
             ActionResult result;
