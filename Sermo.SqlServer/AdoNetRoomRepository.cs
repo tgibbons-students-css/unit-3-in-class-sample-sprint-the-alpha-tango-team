@@ -22,6 +22,7 @@ namespace Sermo.Data.AdoNet
             this.databaseFactory = databaseFactory; 
         }
 
+        // Changes Sprint 1 --  I want to create rooms for categorizing conversations -- Heather Carlson
         public void CreateRoom(string name)
         {
             using(var connection = databaseFactory.CreateConnection())
