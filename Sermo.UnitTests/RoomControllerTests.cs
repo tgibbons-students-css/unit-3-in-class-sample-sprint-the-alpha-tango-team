@@ -281,6 +281,8 @@ namespace Sermo.UnitTests
             Assert.That(httpStatusCodeResult.StatusCode, Is.EqualTo(400));
         }
 
+        // Adding method Sprint 2 --  public void PostAddMessageWithBlockedWordsCausesValidationError(string text) -- Mike Rauzi
+
         [SetUp]
         public void SetUp()
         {
